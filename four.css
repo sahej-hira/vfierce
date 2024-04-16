@@ -1,0 +1,44 @@
+
+body{
+    background-color: rgb(94, 177, 224);
+    color: black;
+
+    
+    h1{
+        text-align: center;
+    }
+    h3{
+        text-align:left;
+    }
+    h3{
+        text-align: left;
+    }
+    footer {
+        position: relative; 
+        width: 100%;
+        margin-top:20px ;
+        background: #0d506b;
+        text-align: center;
+        bottom: 0;  
+        padding: 50px;
+      
+      }
+      
+      .footer-container {
+        display: flex;
+        justify-content: space-between; 
+      }
+      
+      .footer-column {
+        flex-basis: 30%; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+      
+      }
+      
+      .footer-column a {
+        margin-bottom: 10px; 
+        color: black;
+      }
+}
