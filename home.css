@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.app-bar {
+  background-color: #6699CC;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px; /* Adjust the height of the logo */
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  margin-right: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.login-btn {
+  background-color: #FFD700;
+  color: black;
+
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.home-page-face {
+  height: 35px;
+}
+/*
+.container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  Centers the button horizontally 
+  justify-content: center;  Centers the button vertically 
+  height: 100px;  Adjust height as needed 
+  width: 600px;    
+  background-color: orangered;
+}
+
+.deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  Centers the button horizontally
+  justify-content: center;  Centers the button vertically
+  height: 300px; /* Adjust height as needed
+  width: 400px;
+  background-color: orange;
+}
+*/
+.quote1 p{
+padding: 1px;
+font-size:25px;
+font:"Lucida Handwriting"; /* not being applied? */
+color:#002D72;
+}
+  /* vertically aligned buttons - template*/
+  .container2 {
+  text-align: center;
+  padding: 20px;
+  width:full;
+  background-color:#F5F5F5;
+  }
+
+  .deck button {
+    border:1px solid #0a0a23;
+    text-align: center;
+    display: inline-block; /* Change from inline to inline-block */
+    color:white;
+    font-size: 21px;
+    margin: 10px; /* Adjust margin for space between buttons */
+    height: 300px; /* Increase height */
+    width: 150px; /* Decrease width */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transition effect for smooth scaling */
+    overflow: hidden; /* Keep everything within the bounds of the button */     
+  }
+
+  .deck button:hover {
+      transform: scale(1.1); /* Enlarge the button by 10% */
+  }
+
+
+  /* Style for the button */
+.template1{
+        /* Set background image */
+      background-image: url('https://isourcingindia.com/wp-content/uploads/2020/11/Government-Policies-to-Encourage-New-Setups-in-India.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; /* Adjust the background position as needed */
+}
+.template2{
+        /* Set background image */
+      background-image: url('https://www.iipm.edu/public/images/news/bigBYST%20lecture%20by%20Mr1354518062.%20hansraj%20senior%20corporate%20manager%20on%20the%20theme%20entrepreneurship%20in%20india%20-%20a%20blueprint%20for%20inclusive%20growth'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: right; /* Adjust the background position as needed */
+}
+  .template3{
+    min-width: 300px;
+            /* Set background image */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-4CWNsHYCJDEPMwrDOjvl3e7ogP-LlxXHeWnUpSkVw&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; /* Adjust the background position as needed */
+  }
+.template4{
+        /* Set background image */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdPSWxlZjDB-p3DVUkj8r57LddyLVvQZSLy7yzXjv8xQ&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: left; /* Adjust the background position as needed */
+}
+.template5{
+        /* Set background image */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXx8T1gRXUfUc_wM5OlrvMY-sV7167L0HbXS6iENEC4Q&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; /* Adjust the background position as needed */
+}
+/* flashcard */
+/* Flashcard container used to center flashcard*/
+h3{
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  text-align: center;
+  padding:2px;
+
+}
+
+.flashcard-container {
+  width: 300px;
+  height: 400px;
+  position: center;
+  color: black;
+}
+
+.flashcard {
+  perspective: 1000px;
+  position: center;
+  width: 300px;
+  height: 400px;
+
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flashcard img {
+      width: 200px; /* Set width */
+      height: 200px; /* Set height */
+      border-radius: 50%; /* Make the div circular */
+      display: block;
+  }
+
+.flashcard h4{
+display: block;
+font-size: 20px;
+}
+
+.front {
+  background-color: #e8cfb8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+.back {
+  background-color: #2774AE;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+}
+.back h2{
+  font-size:35px;
+}
+.back_info{
+  font-size:20px;
+  color:black;
+}
+.back_review{
+  color:white;
+  font-size:30px;
+} 
+
+.flashcard:hover .front {
+  transform: rotateY(180deg);
+}
+
+.flashcard:hover .back {
+  transform: rotateY(0deg);
+}
+
+
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.rec{
+  background-color: cadetblue;
+  height: 380px;
+  width: auto;
+  margin: auto;
+  text-align:center;
+}
+
+.rec h4{
+text-align: center;
+font-size: 28px;
+padding-top:11px;
+}
+
+.supporter{
+display: inline-block;
+margin: 0 80px;
+}
+
+.supporter_img{
+width: 200px; /* Set width */
+height: 200px; /* Set height */
+border-radius: 50%; /* Make the div circular */
+background-color: white;
+}
+
+.footer{
+padding: 2px;
+height: auto;
+width:auto;
+background-color: black;
+color: white; 
+}
+
+.footer_left{
+display:inline;
+margin:10px;
+padding-right:8px;
+left:20px;
+}
+
+
+.footer_left{
+ display:inline;
+padding-left:8px;
+right:20px;
+}
+
+
+
+  
