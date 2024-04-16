@@ -1,86 +1,185 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  nav {
-    width: 100%;
-    height: 75px;
-    line-height: 75px;
-    padding-left: 30px; 
-    position: fixed;
-    background-image: linear-gradient(#3d565e, #012733);
-  }
-  
-  nav .logo {
-    float: left;
-    width: 100px;
-  }
-  
-  nav ul {
-    float: right;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    list-style: none;
-  }
-  
-  nav ul li a {
-    font-size: 18px;
-    text-transform: uppercase;
-    padding: 0px 50px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    color: #ff8c69;
-    transition: all 0.4s ease 0s;
-  }
-  
-  .content-items .about-nss {
-    margin: 0px;
-    background: linear-gradient(#64cef1, #012733); 
-  }
-  
-  .content-items .about-nss h2 {
-    text-align: center;
-  }
-  
-  .content-items .columns {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .content-items .column {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .content-items img {
-    width: 100%;
-    height: 85vh;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .logo img {
-    height: 70px;
-    width: 100px;
-  }
-  
-  .columns img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%; 
-    display: block; 
-    margin: 0 auto; 
-    margin-top: 30px; 
-  }
-  
-  .content-items .column p {
-    margin-top: 50px; 
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  padding-left: 30px; 
+  position: fixed;
+  background-image: linear-gradient(#3d565e, #012733);
+}
+
+nav .logo {
+  float: left;
+  width: 100px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 50px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ff8c69;
+  transition: all 0.4s ease 0s;
+}
+
+.content-items .about-nss {
+  margin: 0px;
+  background-color:#a8c6cf;
+}
+
+.content-items .about-nss h2 {
+  text-align: center;
+  padding-top:25px;
+}
+
+.content-items .columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-items .column {
+  flex: 1;
+  padding: 20px;
+}
+
+.content-items img {
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo img {
+  height: 70px;
+  width: 100px;
+}
+
+.columns img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%; 
+  display: block; 
+  margin: 0 auto; 
+  margin-top: 30px; 
+  margin-bottom:30px;
+}
+
+.content-items .column p {
+  margin-top: 50px; 
+}
+
+.column1 img{
+ height:250px;
+ width:250px;
+ margin-top:50px;
+ margin-right:180px ;
+ margin-bottom:50px;
+
+}
+
+.content-items .obj-nss {
+margin: 0px;
+background: linear-gradient(#548799, #2f697a); 
+}
+
+.content-items .obj-nss h2 {
+text-align: center;
+padding-top: 25px;
+}s
+
+.content-items .columns {
+display: flex;
+justify-content: space-between;
+}
+.events h2{
+text-align: center;
+}
+
+
+footer {
+position: relative; 
+width: 100%;
+margin-top:20px ;
+background:#012733;
+text-align: center;
+bottom: 0;  
+padding: 50px;
+
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between; 
+}
+
+.footer-column {
+flex-basis: 30%; 
+display: flex;
+flex-direction: column; 
+align-items: center; 
+
+}
+
+.footer-column a {
+margin-bottom: 10px; 
+color:#ff6f42;
+}
+
+
+
+
+.card-section {
+padding-top: 15px;
+margin-bottom: 0px; 
+text-align: center;
+background: linear-gradient(#8caeb9, #1c3f49);
+overflow: hidden; /* Hide overflowing content */
+}
+
+
+.card {
+flex: 0 0 auto;
+width: 300px; 
+margin-right: 10px;
+scroll-snap-align: start;
+
+}
+
+.card-slider {
+display: flex;
+scroll-snap-type: x mandatory;
+gap: 20px; 
+}
+
+.card img {
+width: 100%;
+height: 150px;
+}
+
+/* Keyframe animation for auto-sliding */
+@keyframes slideAnimation {
+0% { transform: translateX(0); }
+100% { transform: translateX(-100%); }
+}
+
+.card-slider-animation {
+animation: slideAnimation 20s linear infinite; 
+}
