@@ -97,7 +97,7 @@ nav ul li a:hover {
 
 .content-items .obj-nss {
 margin: 0px;
-background: linear-gradient(#548799, #2f697a); 
+background: linear-gradient(#8abcce, #376b7a); 
 }
 
 .content-items .obj-nss h2 {
@@ -145,41 +145,65 @@ color:#ff6f42;
 
 
 
-
-.card-section {
-padding-top: 15px;
-margin-bottom: 0px; 
-text-align: center;
-background: linear-gradient(#8caeb9, #1c3f49);
-overflow: hidden; /* Hide overflowing content */
-}
-
-
-.card {
-flex: 0 0 auto;
-width: 300px; 
-margin-right: 10px;
-scroll-snap-align: start;
-
-}
-
-.card-slider {
-display: flex;
-scroll-snap-type: x mandatory;
-gap: 20px; 
-}
-
 .card img {
 width: 100%;
 height: 150px;
 }
+.card {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 300px; /* Increase width */
+  height: 270px;
+  scroll-snap-align: start;
 
-/* Keyframe animation for auto-sliding */
-@keyframes slideAnimation {
-0% { transform: translateX(0); }
-100% { transform: translateX(-100%); }
+  }
+  
+  
+
+.card:hover {
+  transform: translateY(-10px);
 }
 
-.card-slider-animation {
-animation: slideAnimation 20s linear infinite; 
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-body {
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+.card-slider {
+  display: flex;
+  flex-direction: row; /* Arrange cards horizontally */
+  gap: 60px;
+  overflow-x: auto; 
+  padding-bottom: 20px; 
+  margin-bottom: -20px; /* Counteract padding to keep layout consistent */
+}
+h2{
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 15px;
 }
