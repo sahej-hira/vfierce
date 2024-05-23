@@ -14,6 +14,6 @@ The list of pages for this website includes:
 
 HTML and CSS for pages are presented by the name of the pages, respectively.
 
-Home + about us page by https://github.com/shark-lamp (Sahej, myself).
-events + programs page by https://github.com/Gnotra35.
-government policies and funding/ ideas pages by https://github.com/Kushmeet-123.
+"Home" + "about us" page by https://github.com/shark-lamp (Sahej, myself).
+"events" + "programs" page by https://github.com/Gnotra35.
+"government policies" and "funding/ ideas" pages by https://github.com/Kushmeet-123.
