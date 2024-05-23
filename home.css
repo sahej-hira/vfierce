@@ -1,358 +1,401 @@
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-
+/*   background: linear-gradient(#3d565e, #012733); */
 .app-bar {
-    background-color: #6699CC;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  
+  /* background-color: #6699CC;   */
+  background: linear-gradient(#3d565e, #012733); ;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    height: 30px; /* Adjust the height of the logo */
-    margin-right: 10px;
+  height: 30px; /* Adjust the height of the logo */
+  margin-right: 10px;
 }
 
 .menu {
-    display: flex;
+  display: flex;
 }
 
 .menu-item {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
 }
 
 .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .login-btn {
-    background-color: #FFD700;
-    color: black;
-  
-    padding: 10px 15px;
-    cursor: pointer;
+  background-color: #FFD700;
+  color: black;
+
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 .home-page-face {
-    height: 35px;
+  height: 35px;
 }
 /*
 .container2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  Centers the button horizontally 
-    justify-content: center;  Centers the button vertically 
-    height: 100px;  Adjust height as needed 
-    width: 600px;    
-    background-color: orangered;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  Centers the button horizontally 
+  justify-content: center;  Centers the button vertically 
+  height: 100px;  Adjust height as needed 
+  width: 600px;    
+  background-color: orangered;
 }
 
 .deck {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  Centers the button horizontally
-    justify-content: center;  Centers the button vertically
-    height: 300px; /* Adjust height as needed
-    width: 400px;
-    background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  Centers the button horizontally
+  justify-content: center;  Centers the button vertically
+  height: 300px; /* Adjust height as needed
+  width: 400px;
+  background-color: orange;
 }
 */
 
 .container1 {
-    position: relative;
+  position: relative;
 }
 
-.home_img {
-    width:1500px;
-    max-width: 100%; /* Set maximum width to 100% of its container */
-    height: auto; /* Maintain aspect ratio */
+.text_in_block {
+  color: white; /* change text color to white   (#3d565e,#012733 , #000000 )   */
+  background: linear-gradient( #000000,#012733);
+  padding: 70px;
+  text-align: center;
 }
 
-.text_on_image {
-    position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-28%, -50%);
-    text-align: center;
-    color: white; /* Set text color ,#A9A9A9*/
-    background-color:#E1EBEE;
-    border-radius: 10px;
-    padding:9px;
-    border: 2px solid #BEBEBE;
+.red_text{
+  margin:5px;
+  font-size: 31px;
+  color: #C0C0C0;
+  }
+  
+  .non_red_text{
+    color: white;
+  }
+  
+  .line1, .line2{
+    background-color: #3d565e;
+    height: 3px;
+    margin: 5px;
+  }
+
+.video_in_main {
+  justify-content:center;
+  width:1500px;
+  max-width: 100%; /* Set maximum width to 100% of its container */
+  height: auto; /* Maintain aspect ratio */
+  padding: 0 10px;
+  
 }
 
 .text_on_image h4,
 .text_on_image p,
 .text_on_image h1 {
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
-}
-
-.red_text{
-  color:#002D72;
-  margin:5px;
-}
-
-.non_red_text{
-  color:#002D72;
-}
-
-.line1, .line2{
-  background-color: #6699CC;
-  margin-bottom: 3px;
-  height: 2px;
-  width: 160px;
-  max-width:100%;
-  margin-left: 110px;
-  top: 50%; /* Adjust as needed */
-  left: 50%; /* Adjust as needed */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
 }
 
 .quote1 p{
-  padding: 1px;
-  font-size:25px;
-  font:"Lucida Handwriting"; /* not being applied? */
-  color:#002D72;
+padding: 1px;
+font-size:25px;
+font:"Lucida Handwriting"; /* not being applied? */
+color:#002D72;
 }
-    /* vertically aligned buttons - template*/
-    .container2 {
+  /* vertically aligned buttons - template*/
+.deck {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.deck button {
+  height: 300px;
+  width: 100%;
+}
+
+.template3 {
+  grid-column: 3;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+  .deck button {
+    border:1px solid #0a0a23;
     text-align: center;
-    padding: 20px;
-    width:full;
-    background-color:#F5F5F5;
-    }
+    display: inline-block; /* Change from inline to inline-block */
+    color:white;
+    font-size: 21px;
+    margin: 10px; /* Adjust margin for space between buttons */
+    height: 300px; /* Increase height */
+    width: 150px; /* Decrease width */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transition effect for smooth scaling */
+    overflow: hidden; /* Keep everything within the bounds of the button */     
+  }
 
-    .deck button {
-      border:1px solid #0a0a23;
-      text-align: center;
-      display: inline-block; /* Change from inline to inline-block */
-      color:white;
-      font-size: 21px;
-      margin: 10px; /* Adjust margin for space between buttons */
-      height: 300px; /* Increase height */
-      width: 150px; /* Decrease width */
-      cursor: pointer;
-      transition: all 0.3s ease; /* Transition effect for smooth scaling */
-      overflow: hidden; /* Keep everything within the bounds of the button */     
-    }
-
-    .deck button:hover {
-        transform: scale(1.1); /* Enlarge the button by 10% */
-    }
+  .deck button:hover {
+      transform: scale(1.1); /* Enlarge the button by 10% */
+  }
 
 
-    /* Style for the button */
+  /* Style for the button in the deck*/
 .template1{
-          /* Set background image */
-        background-image: url('https://isourcingindia.com/wp-content/uploads/2020/11/Government-Policies-to-Encourage-New-Setups-in-India.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
-        
-        /* Set background size and position */
-        background-size: cover; /* Adjust the background size as needed */
-        background-position: center; /* Adjust the background position as needed */
+      
+        /* Set background image */
+      background-image: url('https://isourcingindia.com/wp-content/uploads/2020/11/Government-Policies-to-Encourage-New-Setups-in-India.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; /* Adjust the background position as needed */
 }
 .template2{
-          /* Set background image */
-        background-image: url('https://www.iipm.edu/public/images/news/bigBYST%20lecture%20by%20Mr1354518062.%20hansraj%20senior%20corporate%20manager%20on%20the%20theme%20entrepreneurship%20in%20india%20-%20a%20blueprint%20for%20inclusive%20growth'); /* Replace 'path/to/your/image.jpg' with the path to your image */
-        
-        /* Set background size and position */
-        background-size: cover; /* Adjust the background size as needed */
-        background-position: right; /* Adjust the background position as needed */
+        /* Set background image */
+      background-image: url('https://www.iipm.edu/public/images/news/bigBYST%20lecture%20by%20Mr1354518062.%20hansraj%20senior%20corporate%20manager%20on%20the%20theme%20entrepreneurship%20in%20india%20-%20a%20blueprint%20for%20inclusive%20growth'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: right; /* Adjust the background position as needed */
 }
-    .template3{
-      min-width: 300px;
-              /* Set background image */
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-4CWNsHYCJDEPMwrDOjvl3e7ogP-LlxXHeWnUpSkVw&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
-        
-        /* Set background size and position */
-        background-size: cover; /* Adjust the background size as needed */
-        background-position: center; /* Adjust the background position as needed */
-    }
+.template3{
+    min-width: 300px;
+            /* Set background image */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-4CWNsHYCJDEPMwrDOjvl3e7ogP-LlxXHeWnUpSkVw&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; /* Adjust the background position as needed */
+  }
 .template4{
-          /* Set background image */
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdPSWxlZjDB-p3DVUkj8r57LddyLVvQZSLy7yzXjv8xQ&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
-        
-        /* Set background size and position */
-        background-size: cover; /* Adjust the background size as needed */
-        background-position: left; /* Adjust the background position as needed */
+        /* Set background image */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdPSWxlZjDB-p3DVUkj8r57LddyLVvQZSLy7yzXjv8xQ&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: left; /* Adjust the background position as needed */
 }
 .template5{
-          /* Set background image */
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXx8T1gRXUfUc_wM5OlrvMY-sV7167L0HbXS6iENEC4Q&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
-        
-        /* Set background size and position */
-        background-size: cover; /* Adjust the background size as needed */
-        background-position: center; /* Adjust the background position as needed */
+        /* Set background image */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXx8T1gRXUfUc_wM5OlrvMY-sV7167L0HbXS6iENEC4Q&s'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+      
+      /* Set background size and position */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; /* Adjust the background position as needed */
 }
+
+
+
 /* flashcard */
 /* Flashcard container used to center flashcard*/
 h3{
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    text-align: center;
-    padding:2px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  text-align: center;
+  padding:2px;
 
 }
 
 .flashcard-container {
-    width: 300px;
-    height: 400px;
-    position: center;
-    color: black;
+  width: 150px;
+  height: 400px;
+  color: black;
+ 
 }
 
 .flashcard {
-    perspective: 1000px;
-    position: center;
-    width: 300px;
-    height: 400px;
+  perspective: 100px;
+  position: center;
+  padding-left: 520px;
+  width: 150px;
+  height: 400px;
 
-  }
-  
-  .front, .back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-  }
+}
 
-  .flashcard img {
-        width: 200px; /* Set width */
-        height: 200px; /* Set height */
-        border-radius: 50%; /* Make the div circular */
-        display: block;
-    }
+.front, .back {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flashcard_img {
+  width: 50px; /* Set width */
+  height: 50px; /* Set height */
+  border-radius: 50%; /* Make the div circular */
+  justify-content: center;
+  }
 
 .flashcard h4{
-  display: block;
-  font-size: 20px;
+font-size: 20px;
+justify-content: center;
 }
+
+.front {
+  background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background-image: url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
   
-  .front {
-    background-color: #e8cfb8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s;
-  }
-  
-  .back {
-    background-color: #2774AE;
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s;
-  }
-  .back h2{
-    font-size:35px;
-  }
-  .back_info{
-    font-size:20px;
-    color:black;
-  }
-  .back_review{
-    color:white;
-    font-size:30px;
-  } 
-  
-  .flashcard:hover .front {
-    transform: rotateY(180deg);
-  }
-  
-  .flashcard:hover .back {
-    transform: rotateY(0deg);
-  }
-  
- 
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 16px;
-    text-align: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s;
+}
+
+.back {
+  /*background-image:url("https://images.unsplash.com/photo-1508615039623-a25605d2b022?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGElMjBkYXJrJTIwYmx1ZSUyMHllbGxvdyUyMGJhY2tncm91bmQlMjBibHVycmVkfGVufDB8fDB8fHww"); */
+  background-image: url("https://plus.unsplash.com/premium_photo-1670513726119-4cc42ba16d40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JleSUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D");
+  /* background-color: #2774AE; 
+  background-size: contain;   */
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s;
+}
+.back h2{
+  font-size:35px;
+}
+.back_info{
+  font-size:20px;
+  color:black;
+}
+.back_review{
+  color:white;
+  font-size:30px;
+} 
+
+.flashcard:hover .front {
+  transform: rotateY(180deg);
+}
+
+.flashcard:hover .back {
+  transform: rotateY(0deg);
+}
+
+
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+}
 
 
 .rec{
-    background-color: cadetblue;
-    height: 380px;
-    width: auto;
-    margin: auto;
-    text-align:center;
+  background: linear-gradient(#3d565e, #000000);
+  height: 380px;
+  width: auto;
+  margin: auto;
+  text-align:center;
 }
 
 .rec h4{
-  text-align: center;
-  font-size: 28px;
-  padding-top:11px;
+text-align: center;
+font-size: 28px;
+padding-top:11px;
 }
 
 .supporter{
-  display: inline-block;
-  margin: 0 80px;
+display: inline-block;
+margin: 0 80px;
 }
 
+.supporter_name{
+  color : white
+}
 .supporter_img{
-  width: 200px; /* Set width */
-  height: 200px; /* Set height */
-  border-radius: 50%; /* Make the div circular */
-  background-color: white;
+width: 200px; /* Set width */
+height: 200px; /* Set height */
+border-radius: 50%; /* Make the div circular */
+background-color: white;
 }
 
 .footer{
-  padding: 2px;
+padding: 2px;
+height: auto;
+width:auto;
+background: linear-gradient(#000000, #012733);
+color: white; 
+}
+
+.footer_left{
+display:inline;
+margin:10px;
+padding-right:8px;
+left:20px;
+}
+
+
+.footer_left{
+ display:inline;
+padding-left:8px;
+right:20px;
+}
+
+
+ .carousel { 
+  width: 100%;
+   overflow: hidden;
+} 
+
+/* .carousel div {
+  padding-left: 10px;
+  padding-right: 10px;
+} */
+
+
+.carousel img {
+  width: 100%;
   height: auto;
-  width:auto;
-  background-color: black;
-  color: white; 
-}
-
-.footer_left{
-  display:inline;
-  margin:10px;
-  padding-right:8px;
-  left:20px;
-}
-
-
-.footer_left{
-   display:inline;
-  padding-left:8px;
-  right:20px;
+  max-height: 400px; /* Set a maximum height for the images */
+  object-fit: cover; /* Ensure images cover the entire slide area */
+ 
 }
 
 
