@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Women Entrepreneurship Project Idea Submission and Funding Form</title>
+  <link rel="stylesheet" href="funding.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Project Idea Submission and Funding Form</h2>
+    <form id="projectForm" action="funding.html" method="POST">
+      <!-- Personal Information -->
+      <h3>Personal Information:</h3>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="companyName">Business/Company Name:</label>
+      <input type="text" id="companyName" name="companyName">
+
+      <label for="website">Website:</label>
+      <input type="url" id="website" name="website">
+
+
+      <!-- Project Information -->
+      <h3>Your Project Idea:</h3>
+      <label for="projectTitle">Project Title:</label>
+      <input type="text" id="projectTitle" name="projectTitle" required>
+
+      <label for="detailedDescription">Detailed Description:</label>
+      <textarea id="detailedDescription" name="detailedDescription" rows="6" required></textarea>
+
+      <label for="fundingRequirements">Funding Requirements:</label>
+      <input type="number" id="fundingRequirements" name="fundingRequirements" required>
+
+      <label for="previousExperience">Previous Experience:</label>
+      <textarea id="previousExperience" name="previousExperience" rows="4"></textarea>
+
+
+      <!-- Supporting Women's Entrepreneurship -->
+      <h3>Supporting Women's Entrepreneurship:</h3>
+      <label for="supportDescription">How does your project support and empower women entrepreneurs?</label>
+      <textarea id="supportDescription" name="supportDescription" rows="4" required></textarea>
+
+      <!-- Donor Contribution -->
+      <h3>Donor Contribution:</h3>
+      <label for="donorContribution">Interested in contributing financially to support women entrepreneurship:</label>
+      <input type="number" id="donorContribution" name="donorContribution">
+
+        <div class="form-group">
+            <label for="paymentMethod">Choose your payment method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="">Select Payment Method</option>
+                <option value="paypal">PayPal</option>
+                <option value="creditCard">Credit Card</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="button" value="Continue" onclick="redirectToPage()">
+        </div>
+      
+
+      <label for="donorContact">Contact Information:</label>
+      <input type="text" id="donorContact" name="donorContact">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="funding.js"></script>
+</body>
+</html>

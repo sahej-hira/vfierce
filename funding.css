@@ -1,0 +1,62 @@
+.container {
+  width: 50%;
+  margin: 40px auto;
+}
+
+h2 {
+  text-align: center;
+   color: #036280;
+}
+
+form {
+  background:linear-gradient(#8ed5ec,#1f7088 );
+
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid hsl(0, 100%, 99%);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fcf2f2;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+   background-color:#0794c4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color:#174555;
+}
