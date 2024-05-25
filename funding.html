@@ -7,7 +7,7 @@
 <body>
   <div class="container">
     <h2>Project Idea Submission and Funding Form</h2>
-    <form id="projectForm" action="funding.html" method="POST">
+    <form id="projectForm" action="project.php" method="POST">
       <!-- Personal Information -->
       <h3>Personal Information:</h3>
       <label for="fullName">Full Name:</label>
@@ -25,7 +25,6 @@
       <label for="website">Website:</label>
       <input type="url" id="website" name="website">
 
-
       <!-- Project Information -->
       <h3>Your Project Idea:</h3>
       <label for="projectTitle">Project Title:</label>
@@ -40,7 +39,6 @@
       <label for="previousExperience">Previous Experience:</label>
       <textarea id="previousExperience" name="previousExperience" rows="4"></textarea>
 
-
       <!-- Supporting Women's Entrepreneurship -->
       <h3>Supporting Women's Entrepreneurship:</h3>
       <label for="supportDescription">How does your project support and empower women entrepreneurs?</label>
@@ -49,21 +47,21 @@
       <!-- Donor Contribution -->
       <h3>Donor Contribution:</h3>
       <label for="donorContribution">Interested in contributing financially to support women entrepreneurship:</label>
-      <input type="number" id="donorContribution" name="donorContribution">
+      <input type="text" id="donorContribution" name="donorContribution">
 
-        <div class="form-group">
-            <label for="paymentMethod">Choose your payment method:</label>
-            <select id="paymentMethod" name="paymentMethod">
-                <option value="">Select Payment Method</option>
-                <option value="paypal">PayPal</option>
-                <option value="creditCard">Credit Card</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <input type="button" value="Continue" onclick="redirectToPage()">
-        </div>
-      
+      <div class="form-group">
+        <label for="paymentMethod">Choose your payment method:</label>
+        <select id="paymentMethod" name="paymentMethod">
+          <option value="">Select Payment Method</option>
+          <option value="paypal">PayPal</option>
+          <option value="creditCard">Credit Card</option>
+        </select>
+      </div>
 
+      <button type="button" onclick="redirectToPage()">Continue</button>
+
+      <!-- Contact Information -->
+      <h3>Contact Information:</h3>
       <label for="donorContact">Contact Information:</label>
       <input type="text" id="donorContact" name="donorContact">
 
