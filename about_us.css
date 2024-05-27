@@ -102,7 +102,7 @@ body {
 }
 
 .describe{
-  background: linear-gradient(to bottom right,#192225,#50666E, #12191c, #3d565e); 
+  background: linear-gradient(to bottom right,#3d565e, #192225,#50666E, #12191c, #3d565e, #012733); 
   height:auto;
   width: auto;
   margin: 20px;
