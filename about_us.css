@@ -5,7 +5,7 @@ body {
 
 
 .app-bar {
-    background-color: #6699CC;
+    background: linear-gradient(#3d565e, #012733); 
     color: white;
     padding: 15px;
     display: flex;
@@ -72,13 +72,14 @@ body {
 .highlight{
   padding: 1px;
   font-size:25px;
-  color:#002D72;
+  
+  color:#3d565e ;
   text-align:center;
  
 }
 
 .block1{
-  background-color:#F5F5F5;
+  background-color:#EBEEEE;
   display: flex; /* Use flexbox */
   flex-wrap: wrap; /* Allow items to wrap if necessary */
   align-items: center; /* Center items vertically */
@@ -101,7 +102,7 @@ body {
 }
 
 .describe{
-  background-color:#002D72;
+  background: linear-gradient(to bottom right,#192225,#50666E, #12191c, #3d565e); 
   height:auto;
   width: auto;
   margin: 20px;
@@ -112,10 +113,10 @@ body {
 
 h3{
   font-size:40px;
-  color:#89CFF0; 
+  color:#77888e; 
   font-family: "Lucida Console";
   text-align: center;
-  
+  text-decoration: underline;
 }
 
 
@@ -179,14 +180,15 @@ h3{
 h2{
   color:#FFC72C;
   font-size: 36px;
-  text-align: center;
-  background-color:#4C516D;
+  text-align: center; 
+  background: #30444B;
+/*   background: linear-gradient(#243338, #181818); */
   padding-top:10px;
   padding-bottom:10px;
 }
 
 .contact_us p{
-  
+  text-align: center;
   padding-left:16px;
   font-size:24px;
   padding-bottom:0px;
@@ -230,7 +232,7 @@ h2{
   padding: 2px;
   height: auto;
   width:auto;
-  background-color: black;
+  background: linear-gradient(#000000, #012733);
   color: white; 
   text-align: center;
 }
@@ -245,5 +247,4 @@ h2{
    display:inline;
   padding-left:8px;
 }
-
 
